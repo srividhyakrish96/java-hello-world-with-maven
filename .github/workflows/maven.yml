@@ -21,3 +21,5 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: To run program
+      run: java -cp target/jb-hello-world-maven-0.1.0.jar hello.HelloWorld
